@@ -1,12 +1,12 @@
 require 'thor'
 require './ApiController'
 
-class YandexXml < Thor
+class YandexXmlConsole < Thor
 
-  desc "show_limits USER KEY", "Запрос лимитов на ближайшие сутки"
+  desc "limits USER KEY", "Запрос лимитов на ближайшие сутки"
   method_option :by_hours, :aliases => "-h", :desc => "Показать лимиты по часам"
 
-  def show_limits (user, key)
+  def limits (user, key)
     response = ApiController.new(user, key).limits
 
     if options[:by_hours] && response.no_error?
