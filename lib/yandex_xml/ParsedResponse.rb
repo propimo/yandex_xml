@@ -82,7 +82,7 @@ class ParsedResponse
     # Для каждой группы
     groups.each do |group|
       # Для каждой страницы
-      group['doc'].each do |doc|
+      group['doc'].each do |doc|  #TODO? Ошибка, если в ответе только один док
         doc_desc = {
           pos: doc_pos,
           url: doc['url'],
