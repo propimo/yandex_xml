@@ -17,7 +17,6 @@ class ApiController
 
   def get_query(query_str, options)
     uri = URI.parse("#{@base_url}&#{URI.encode_www_form(options)}&query=#{query_str}")
-    puts uri
     response = Net::HTTP.get(uri)
     ParsedResponse.new(response)
   end
