@@ -19,8 +19,14 @@ class YandexXml < Thor
   # ------------- Всё что ниже тестировалось только с ошибкой (например, неверные вх. данные) -------------
 
   desc "get_request USER KEY QUERY", "GET-запрос"
+
+  # Далее эти же параметры повторяются для всех GET-запросов
+  # Значения по умолчанию те же, что указаны в документации яндекса (ссылка: https://yandex.ru/dev/xml/doc/dg/concepts/get-request.html)
+  # Здесь перечислены не все возможные параметры
   method_option :sortby, :default => "rlv"
-  method_option :filter, :default => "none" # Это не все возможные параметры
+  method_option :filter, :default => "none"
+  method_option :maxpassages, :default => "4"
+  method_option :page, :default => "0"
 
   def get_request (user, key, query_str)
     response = ApiController.new(user, key).get_query(query_str, options)
@@ -30,6 +36,8 @@ class YandexXml < Thor
   desc "get_top_n USER KEY QUERY N", "Показать первые N результатов на поисковый запрос;"
   method_option :sortby, :default => "rlv"
   method_option :filter, :default => "none"
+  method_option :maxpassages, :default => "4"
+  method_option :page, :default => "0"
 
   def get_top_n(user, key, query_str, n)
     raise "n must be Integer" unless n.to_i.to_s == n
@@ -47,6 +55,8 @@ class YandexXml < Thor
   desc "get_first USER KEY QUERY", "Показать первый результат в выдаче на поисковый запрос"
   method_option :sortby, :default => "rlv"
   method_option :filter, :default => "none"
+  method_option :maxpassages, :default => "4"
+  method_option :page, :default => "0"
 
   def get_first(user, key, query_str)
     response = ApiController.new(user, key).get_query(query_str, options)
@@ -60,6 +70,8 @@ class YandexXml < Thor
   desc "get_occurrence_number USER KEY QUERY DOMAIN", "Получить позицию выдачи сайта при определенном поисковом запросе"
   method_option :sortby, :default => "rlv"
   method_option :filter, :default => "none"
+  method_option :maxpassages, :default => "4"
+  method_option :page, :default => "0"
 
   def get_occurrence_number (user, key, query_str, domain)
     response = ApiController.new(user, key).get_query(query_str, options)
