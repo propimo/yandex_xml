@@ -13,7 +13,7 @@ class ParsedResponse
 
     # Проверить на ошибку
     @error_message = response_hash['response']['error']
-    return unless @error_message.nil?
+    return if error? # Выход, если ошибка
 
     # Посчитать лимиты
     if response_hash['response']['limits']
@@ -39,10 +39,12 @@ class ParsedResponse
     # end
 
     #Кол-во ответов
-    @number_of_results = response_hash['response']['found'][0] unless response_hash['response']['found'].nil?
+    if response_hash['response']['found']
+      @number_of_results = response_hash['response']['found'][0]
+    end
 
     # Распарсить страницы
-    unless response_hash['response']['results'].nil?
+    if response_hash['response']['results']
       groups = response_hash['response']['results']['grouping']['group']
       @found_docs = parse_docs(groups)
     end
@@ -65,6 +67,10 @@ class ParsedResponse
 
   def no_error?
     @error_message.nil?
+  end
+
+  def error?
+    !@error_message.nil?
   end
 
   private
