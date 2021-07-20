@@ -9,14 +9,15 @@ class ApiController
   end
 
   def limits
-    uri = URI(@base_url + "&action=limits-info")
+    uri = URI("#{@base_url}&action=limits-info")
     ParsedResponse.new(Net::HTTP.get(uri))
   end
 
   # ------------- Всё что ниже тестировалось только с ошибкой (например, неверные вх. данные) -------------
 
   def get_query(query_str, options)
-    uri = URI.parse(@base_url + "&#{URI.encode_www_form(options)}"  + "&query=#{query_str}")
+    uri = URI.parse("#{@base_url}&#{URI.encode_www_form(options)}&query=#{query_str}")
+    puts uri
     response = Net::HTTP.get(uri)
     ParsedResponse.new(response)
   end
@@ -28,7 +29,7 @@ class ApiController
                               'query'=>:query_str,
                               'sortby'=>options[:sortby],
                               'maxpassages'=>options[:maxpassages],
-                              'page'=>options[:page]) #TODO groupby???
+                              'page'=>options[:page]) # еще один возможный параметр - groupby
 
     ParsedResponse.new(response.body)
   end
