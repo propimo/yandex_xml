@@ -11,6 +11,8 @@ class ParsedResponse
   def initialize (xml_string)
     response_hash = Nori.new.parse(xml_string)['yandexsearch']
 
+    return unless response_hash # Выход, если xml пустой
+
     # Проверить на ошибку
     @error_message = response_hash['response']['error']
     return if error? # Выход, если ошибка
