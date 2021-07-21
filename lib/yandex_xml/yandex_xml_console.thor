@@ -1,5 +1,5 @@
 require 'thor'
-require './ApiController'
+require './api_controller'
 
 class YandexXmlConsole < Thor
 

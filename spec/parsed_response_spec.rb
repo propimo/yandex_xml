@@ -1,4 +1,4 @@
-require '../lib/yandex_xml/ParsedResponse'
+require '../lib/yandex_xml/parsed_response'
 
 
 RSpec.describe YandexXml:ParsedResponse do

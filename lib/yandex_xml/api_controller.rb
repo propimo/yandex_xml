@@ -1,5 +1,5 @@
 require 'net/http'
-require './ParsedResponse.rb'
+require './parsed_response.rb'
 
 class ApiController
   def initialize(user, key)
