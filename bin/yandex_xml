@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'json'
+
+# TODO check for workdirectory
+unless File.exist?('./Rakefile') || File.exist?('./Gemfile')
+  # Устанавливаю корневую папку проекта рабочей
+  Dir.chdir("../")
+end
+
+require "./lib/yandex_xml/api_controller"
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: yandex_xml [options]"
+
+  opts.on('-u', '--user USER', "Имя пользователя") do |v|
+    options[:user] = v
+  end
+  opts.on("-k", "--key KEY", "Ключ пользователя") do |v|
+    options[:key] = v
+  end
+  opts.on("-l", "--limits [by_h]", "Показать лимиты",
+          "Без передачи аргумента покажет сумму лимитов на сутки") do |v|
+    options[:limits] = v
+  end
+  # optparse не поддерживает несколько значений для одного параметра, поэтому
+  # здесь используется json
+  #
+
+  opts.on("-g", "--get_query JSON_STR", "GET-запрос",
+          "Пример JSON_STR (указаны значения по-умолчанию):",
+          "{query:example, filter:rlv, filter:none, maxpassages:4, page:0}") do |v|
+    #options[:get_query] = v
+    p v
+    json = JSON.parse(v)
+    p json
+
+    #'{"desc":{"someKey":"someValue","anotherKey":"value"},"main_item":{"stats":{"a":8,"b":12,"c":10}}}'
+    # '{"query":"example","filter":"rlv","filter":"none","maxpassages":4,"page":0}'
+  # rescue JSON::ParserError
+  #   abort "Неверно передан JSON"#параметр для --get_query"
+  end
+
+end.parse!
+
+
+#if options[:limits].nil? && options[:get_query].nil?
+if !options.key?(:limits) && options[:get_query].nil?
+  abort "В параметрах не указано никакого действия"
+end
+
+api_controller = ApiController.new(options[:user], options[:key])
+
+if options.key?(:limits)
+  response = api_controller.limits
+
+  if options[:limits].nil?
+    puts "Кол-во лимитов на сутки: #{response.limits_day_amount}"
+  else
+    puts "Лимиты по часам:"
+    puts response.limits_by_hours
+  end
+end
+
+unless options[:get_query].nil?
+  #response = api_controller.get_query(options)
+end
