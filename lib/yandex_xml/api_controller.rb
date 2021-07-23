@@ -1,5 +1,6 @@
 require 'net/http'
-require './parsed_response.rb'
+require './lib/yandex_xml/parsed_response'
+#require '../yandex_xml/parsed_response'
 
 class ApiController
   def initialize(user, key)
