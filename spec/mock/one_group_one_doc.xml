@@ -14,21 +14,21 @@
       1
     </maxpassages>
     <groupings>
-      <groupby attr="d" mode="deep" groups-on-page="1" docs-in-group="1" curcateg="-1"/>
+      <groupby attr="" mode="flat" groups-on-page="1" docs-in-group="1" curcateg="-1"/>
     </groupings>
   </request>
-  <response date="20210728T183519">
+  <response date="20210728T183550">
     <reqid>
-      1627497318793617-251025749302194539259638-prestable-app-host-sas-web-yp-69
+      1627497350204734-525911631195136567357930-production-app-host-sas-web-yp-251
     </reqid>
     <found priority="phrase">
-      24860517
+      24860525
     </found>
     <found priority="strict">
-      24860517
+      24860525
     </found>
     <found priority="all">
-      24860517
+      24860525
     </found>
     <found-human>
       Нашлось 25 млн ответов
@@ -37,35 +37,38 @@
       no
     </is-local>
     <results>
-      <grouping attr="d" mode="deep" groups-on-page="1" docs-in-group="1" curcateg="-1">
+      <grouping attr="" mode="flat" groups-on-page="1" docs-in-group="1" curcateg="-1">
         <page first="1" last="1">
           0
         </page>
         <group>
-          <categ attr="d" name="mos.ru"/>
           <doccount>
-            2
+            1
           </doccount>
           <relevance priority="all"/>
-          <doc id="ZF76EE969D121AA3A">
+          <doc id="ZC96102E55D762849">
             <relevance priority="all"/>
             <saved-copy-url>
-              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627497318&amp;tld=ru&amp;lang=ru&amp;la=1627497216&amp;text=yandex&amp;url=https%3A//rmr.mos.ru/presscenter/news/detail/10141109.html&amp;l10n=ru&amp;mime=html&amp;sign=a8ac13716484775614ed60b123398f82&amp;keyno=0
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627497350&amp;tld=ru&amp;lang=ru&amp;la=1627497344&amp;text=yandex&amp;url=https%3A//zen.yandex.ru/media/t_t/obzor-nashei-solnechnoi-paneli-610105530165ef51304bbe65&amp;l10n=ru&amp;mime=html&amp;sign=f351fb4b0fea98ccf396c931c58e329a&amp;keyno=0
             </saved-copy-url>
             <url>
-              https://rmr.mos.ru/presscenter/news/detail/10141109.html
+              https://zen.yandex.ru/media/t_t/obzor-nashei-solnechnoi-paneli-610105530165ef51304bbe65
             </url>
             <domain>
-              rmr.mos.ru
+              zen.yandex.ru
             </domain>
             <title>
-              Динамика строительства в Новой Москве остается высокой...
+              Обзор нашей солнечной панели | ТАЙНЫЕ ТРОПЫ |
+              <hlword>
+                Яндекс
+              </hlword>
+              Дзен
             </title>
             <modtime>
-              20210728T213430
+              20210728T213452
             </modtime>
             <size>
-              1410
+              100
             </size>
             <charset>
               utf-8
@@ -73,25 +76,6 @@
             <mime-type>
               text/html
             </mime-type>
-            <passages>
-              <passage>
-                mc.
-                <hlword>
-                  yandex
-                </hlword>
-                .ru/metrika/watch.js&quot; type=&quot;text/javascript&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt; &lt;noscript&gt;&lt;div&gt;&lt;img src=&quot;//mc.
-                <hlword>
-                  yandex
-                </hlword>
-                .ru/watch/15655924&quot; style=&quot;position:absolute; left
-              </passage>
-              <passage>
-                <hlword>
-                  Yandex
-                </hlword>
-                .Metrika counter
-              </passage>
-            </passages>
             <properties>
               <_PassagesType>
                 0
@@ -103,25 +87,25 @@
           </doc>
         </group>
         <found priority="phrase">
-          1950
+          9711
         </found>
         <found priority="strict">
-          1950
+          9711
         </found>
         <found priority="all">
-          1950
+          9711
         </found>
         <found-docs priority="phrase">
-          24150489
+          10100
         </found-docs>
         <found-docs priority="strict">
-          24150489
+          10100
         </found-docs>
         <found-docs priority="all">
-          24150489
+          10100
         </found-docs>
         <found-docs-human>
-          нашёл 24 млн ответов
+          нашёл 10 тыс. ответов
         </found-docs-human>
       </grouping>
     </results>

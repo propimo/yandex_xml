@@ -23,18 +23,33 @@ RSpec.describe YandexXml:ParsedResponse do
   end
 
   context "query results" do
-    # # TODO? Ошибка в ParsedResponse::parse_docs()
-    # it "Should parse only one query result" do
-    #   xml_string = File.read(@mocks_path + 'one_result.xml')
-    #   response = ParsedResponse.new(xml_string)
-    #   puts response.inspect
-    # end
 
-    it "Should parse many query results" do
-      xml_string = File.read(@mocks_path + 'few_results.xml')
+    it "Should parse many groups with few docs in each" do
+      xml_string = File.read(@mocks_path + 'many_groups_few_docs.xml')
       response = ParsedResponse.new(xml_string)
-      expect(response.found_docs.size).to eql(4)
-      expect(response.found_docs[0][:url]).to eql("https://www.yandex.ru/")
+      expect(response.found_docs.size).to eql(19)
+
+      # Зачем я написал эти ↓ проверки ??
+      #
+      expect(response.found_docs[13][:url]).to eql("https://yandex.tm/games/app/171107")
+      # Пример поиска позиции домена в результатах поиска
+      actual_position = response.found_docs.select do |doc|
+        doc[:domain] == "chatovka.net"
+      end[0][:pos]
+      expect(actual_position).to eql(11)
+    end
+
+    it "Should correctly parse only one doc" do
+      xml_string = File.read(@mocks_path + 'one_group_one_doc.xml')
+      response = ParsedResponse.new(xml_string)
+
+      expect(response.found_docs.size).to eql(1)
+    end
+
+    it "Should parse two docs in one group" do
+      xml_string = File.read(@mocks_path + 'one_group_two_docs.xml')
+      response = ParsedResponse.new(xml_string)
+      expect(response.found_docs.size).to eql(2)
     end
 
   end

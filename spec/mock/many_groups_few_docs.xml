@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yandexsearch version="1.0">
+  <request>
+    <query>
+      yandex
+    </query>
+    <page>
+      0
+    </page>
+    <sortby order="ascending" priority="no">
+      tm
+    </sortby>
+    <maxpassages>
+      1
+    </maxpassages>
+    <groupings>
+      <groupby attr="d" mode="deep" groups-on-page="15" docs-in-group="3" curcateg="-1"/>
+    </groupings>
+  </request>
+  <response date="20210728T204141">
+    <reqid>
+      1627504900966816-1477433863856244425100337-production-app-host-vla-web-yp-239
+    </reqid>
+    <found priority="phrase">
+      24926958
+    </found>
+    <found priority="strict">
+      24926958
+    </found>
+    <found priority="all">
+      24926958
+    </found>
+    <found-human>
+      Нашлось 25 млн ответов
+    </found-human>
+    <is-local>
+      no
+    </is-local>
+    <results>
+      <grouping attr="d" mode="deep" groups-on-page="15" docs-in-group="3" curcateg="-1">
+        <page first="1" last="15">
+          0
+        </page>
+        <group>
+          <categ attr="d" name="zen.yandex.ru"/>
+          <doccount>
+            2070
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z70169A22807E95F6">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504768&amp;text=yandex&amp;url=https%3A//zen.yandex.ru/media/id/604640c39722cd39b3434bf8/ziuganov-raznosit-gosdumu-moscnaia-rech-ob-agente-kremlia-navalnom-60a58f363ba213530f9149a0&amp;l10n=ru&amp;mime=html&amp;sign=6ac3c4b1071220e6a1d7216e2a617987&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://zen.yandex.ru/media/id/604640c39722cd39b3434bf8/ziuganov-raznosit-gosdumu-moscnaia-rech-ob-agente-kremlia-navalnom-60a58f363ba213530f9149a0
+            </url>
+            <domain>
+              zen.yandex.ru
+            </domain>
+            <title>
+              Зюганов РАЗНОСИТ Госдуму! Мощная речь об... |
+              <hlword>
+                Яндекс
+              </hlword>
+              Дзен
+            </title>
+            <modtime>
+              20210728T234023
+            </modtime>
+            <size>
+              181
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="music.yandex.ru"/>
+          <doccount>
+            23111
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z18275DC079A01570">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=en&amp;la=1627504768&amp;text=yandex&amp;url=https%3A//music.yandex.ru/album/17143114/track/88233609&amp;l10n=ru&amp;mime=html&amp;sign=cb9c2c8894608a46abe1747fc11e9427&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://music.yandex.ru/album/17143114/track/88233609
+            </url>
+            <domain>
+              music.yandex.ru
+            </domain>
+            <title>
+              Intentions — Yoga Soul. Слушать онлайн на
+              <hlword>
+                Яндекс
+              </hlword>
+              .Музыке
+            </title>
+            <headline>
+              Intentions — Yoga Soul. Открывайте новую музыку каждый день. Лента с персональными рекомендациями и музыкальными новинками, радио, подборки на любой вкус, удобное...
+            </headline>
+            <modtime>
+              20210728T234001
+            </modtime>
+            <size>
+              1091
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                en
+              </lang>
+            </properties>
+          </doc>
+          <doc id="ZF35677388117B1AC">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504768&amp;text=yandex&amp;url=https%3A//music.yandex.ru/album/16490403/track/86045887&amp;l10n=ru&amp;mime=html&amp;sign=4eef3d282eeaad447d54f86cae573cc1&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://music.yandex.ru/album/16490403/track/86045887
+            </url>
+            <domain>
+              music.yandex.ru
+            </domain>
+            <title>
+              Музыка (Завтрак) — Музыка для кошек. Слушать онлайн на...
+            </title>
+            <headline>
+              Музыка (Завтрак) — Музыка для кошек. Открывайте новую музыку каждый день. Лента с персональными рекомендациями и музыкальными новинками, радио, подборки на любой вкус...
+            </headline>
+            <modtime>
+              20210728T234002
+            </modtime>
+            <size>
+              336
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+          <doc id="Z7521F70D10237094">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504768&amp;text=yandex&amp;url=https%3A//music.yandex.ru/album/16592975/track/81032231&amp;l10n=ru&amp;mime=html&amp;sign=1dc2a36760e80a08406c81fb5c84532d&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://music.yandex.ru/album/16592975/track/81032231
+            </url>
+            <domain>
+              music.yandex.ru
+            </domain>
+            <title>
+              Viens Avec Moi — Shiftwork. Слушать онлайн на
+              <hlword>
+                Яндекс
+              </hlword>
+              .Музыке
+            </title>
+            <headline>
+              Viens Avec Moi — Shiftwork. Открывайте новую музыку каждый день. Лента с персональными рекомендациями и музыкальными новинками, радио, подборки на любой вкус, удобное...
+            </headline>
+            <modtime>
+              20210728T234005
+            </modtime>
+            <size>
+              298
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="scania.com"/>
+          <doccount>
+            1
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z284F5AC99B0D6F01">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504640&amp;text=yandex&amp;url=https%3A//www.scania.com/ru/ru/home/misc/privacy-statement/cookie-update.html&amp;l10n=ru&amp;mime=html&amp;sign=16f0e74d53fe57d9012b3f3ae9411992&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://www.scania.com/ru/ru/home/misc/privacy-statement/cookie-update.html
+            </url>
+            <domain>
+              www.scania.com
+            </domain>
+            <title>
+              Cookie update | Scania Россия
+            </title>
+            <modtime>
+              20210728T233643
+            </modtime>
+            <size>
+              3734
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                .
+                <hlword>
+                  yandex
+                </hlword>
+                .ru. 3389 days. yabs-dsp. Tracks the users activity on the site.
+                <hlword>
+                  Yandex
+                </hlword>
+                Search Console.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="pikabu.ru"/>
+          <doccount>
+            5
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="ZAA79B9614F4070C2">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504640&amp;text=yandex&amp;url=https%3A//pikabu.ru/story/in_i_k_neryiekdotaekdogolo_t__rayochaloin_slevo__anilo_byekdogolo_t___ays_t_5586038&amp;l10n=ru&amp;mime=html&amp;sign=c6d0cabfae238fb822a2131f5e6747f2&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://pikabu.ru/story/in_i_k_neryiekdotaekdogolo_t__rayochaloin_slevo__anilo_byekdogolo_t___ays_t_5586038
+            </url>
+            <domain>
+              pikabu.ru
+            </domain>
+            <title>
+              Мы магазин-Букинист! Самый Большой в Петербурге. | Пикабу
+            </title>
+            <modtime>
+              20210728T233640
+            </modtime>
+            <size>
+              1096
+            </size>
+            <charset>
+              windows-1251
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                3) Получайте дополнительно книгу в подарок! КНИГА ЛАВКА Санкт-Петербург, ул. Торфяная дорога, д.2, корпус 5. Ответим на все Ваши вопросы - knigalavka@
+                <hlword>
+                  yandex
+                </hlword>
+                .ru.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="videosmile.ru"/>
+          <doccount>
+            1
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z27A676A5899FB197">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504768&amp;text=yandex&amp;url=https%3A//videosmile.ru/28963/lessons&amp;l10n=ru&amp;mime=html&amp;sign=857c34900fb514c8249cff9e33ffe27d&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://videosmile.ru/28963/lessons
+            </url>
+            <domain>
+              videosmile.ru
+            </domain>
+            <title>
+              Уроки от krushinsky.kirill2013.
+              <hlword>
+                yandex
+              </hlword>
+              .ru
+            </title>
+            <headline>
+              По заданным фильтрам ничего не найдено. Попробуйте изменить критерий поиска, или сбросить фильтры.
+            </headline>
+            <modtime>
+              20210728T233351
+            </modtime>
+            <size>
+              2638
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="calorizator.ru"/>
+          <doccount>
+            1
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="ZF4E01638C658F344">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504512&amp;text=yandex&amp;url=https%3A//forum.calorizator.ru/viewtopic.php%3Ff%3D49%26p%3D3185743&amp;l10n=ru&amp;mime=html&amp;sign=b6469fc86f76d503d0ca72a6ad32bff9&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://forum.calorizator.ru/viewtopic.php?f=49&amp;p=3185743
+            </url>
+            <domain>
+              forum.calorizator.ru
+            </domain>
+            <title>
+              Чтобы никогда не забыть. А если и забыть, то найти здесь... | Форум
+            </title>
+            <modtime>
+              20210728T232256
+            </modtime>
+            <size>
+              876
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                Кто сейчас на конференции. Зарегистрированные пользователи: alla-pianica, Amelija Saule, Aqdwde, Bing [Bot], GoGo [Bot], Google [Bot], Niakris_T, Oksana Pracht, TATA29,
+                <hlword>
+                  Yandex
+                </hlword>
+                [Bot]...
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="apkmirror.com"/>
+          <doccount>
+            77
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z136C992C69F8A0BD">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627504640&amp;text=yandex&amp;url=https%3A//www.apkmirror.com/apk/yandex-apps/%25D1%258F%25D0%25BD%25D0%25B4%25D0%25B5%25D0%25BA%25D1%2581-%25D0%25B1%25D0%25B5%25D1%2582%25D0%25B0/%25D1%258F%25D0%25BD%25D0%25B4%25D0%25B5%25D0%25BA%25D1%2581-%25D0%25B1%25D0%25B5%25D1%2582%25D0%25B0-21-62-release/&amp;l10n=ru&amp;mime=html&amp;sign=00810485a6676a92c702c6d33cebcb62&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://www.apkmirror.com/apk/yandex-apps/%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%B1%D0%B5%D1%82%D0%B0/%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-%D0%B1%D0%B5%D1%82%D0%B0-21-62-release/
+            </url>
+            <domain>
+              www.apkmirror.com
+            </domain>
+            <title>
+              <hlword>
+                Яндекс
+              </hlword>
+              (бета) 21.62 APK Download by
+              <hlword>
+                Yandex
+              </hlword>
+              Apps - APKMirror
+            </title>
+            <headline>
+              Бесплатно. Размер: 145 Мб. Android. Станьте первыми, кто опробует новые возможности мобильного
+              <hlword>
+                Яндекса
+              </hlword>
+              – скачайте бета-версию приложения и присоединяйтесь к тестированию!
+            </headline>
+            <modtime>
+              20210728T231958
+            </modtime>
+            <size>
+              2053
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="dv.rt.ru"/>
+          <doccount>
+            212
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z4037DB4B01EACEA1">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://docviewer.yandex.ru/?tm=1627504900&amp;tld=ru&amp;lang=ru&amp;name=Yandex_info.pdf&amp;text=yandex&amp;url=http%3A//qyjxqhm.dv.rt.ru/data/Yandex_info.pdf&amp;lr=10777&amp;mime=pdf&amp;l10n=ru&amp;sign=2b6a7176bdfaace3612b2d18fdaf31fa&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              http://qyjxqhm.dv.rt.ru/data/Yandex_info.pdf
+            </url>
+            <domain>
+              qyjxqhm.dv.rt.ru
+            </domain>
+            <title>
+              <hlword>
+                Yandex
+              </hlword>
+              браузер
+            </title>
+            <modtime>
+              20210728T231038
+            </modtime>
+            <size>
+              152
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              application/pdf
+            </mime-type>
+            <passages>
+              <passage>
+                <hlword>
+                  Yandex
+                </hlword>
+                браузер. Чтобы очистить кэш, выполните следующие действия: 1. Нажмите кнопку.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+          <doc id="ZCB6BFFD9B1DB29F8">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://docviewer.yandex.ru/?tm=1627504900&amp;tld=ru&amp;lang=ru&amp;name=Yandex_info.pdf&amp;text=yandex&amp;url=http%3A//qvgcokl.dv.rt.ru/data/Yandex_info.pdf&amp;lr=10777&amp;mime=pdf&amp;l10n=ru&amp;sign=61cc5611c48e4f111cd2a3a4fbec6be6&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              http://qvgcokl.dv.rt.ru/data/Yandex_info.pdf
+            </url>
+            <domain>
+              qvgcokl.dv.rt.ru
+            </domain>
+            <title>
+              <hlword>
+                Yandex
+              </hlword>
+              браузер
+            </title>
+            <modtime>
+              20210728T231229
+            </modtime>
+            <size>
+              153
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              application/pdf
+            </mime-type>
+            <passages>
+              <passage>
+                <hlword>
+                  Yandex
+                </hlword>
+                браузер. Чтобы очистить кэш, выполните следующие действия: 1. Нажмите кнопку.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="chatovka.net"/>
+          <doccount>
+            1
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z633B48C5E8C342D5">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627503232&amp;text=yandex&amp;url=https%3A//chatovka.net/user/920619&amp;l10n=ru&amp;mime=html&amp;sign=15fadd5bb0c91482ccb622412436c155&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://chatovka.net/user/920619
+            </url>
+            <domain>chatovka.net</domain>
+            <title>
+              da.evgeni@
+              <hlword>
+                yandex
+              </hlword>
+              .ru - Чатовка.net
+            </title>
+            <modtime>
+              20210728T230731
+            </modtime>
+            <size>
+              167
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                Первое посещение сайта было 28 июля 2021 г. Был 10 минут назад. da.evgeni@
+                <hlword>
+                  yandex
+                </hlword>
+                .ru.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="yandex.tm"/>
+          <doccount>
+            4
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z0F0A936BF6AD8B1D">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627501824&amp;text=yandex&amp;url=https%3A//yandex.tm/games/app/160696&amp;l10n=ru&amp;mime=html&amp;sign=93dd58b2125b3c76961e9f4fee733b49&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://yandex.tm/games/app/160696
+            </url>
+            <domain>
+              yandex.tm
+            </domain>
+            <title>
+              Угадай мультик Диснея — “
+              <hlword>
+                Yandex
+              </hlword>
+              .Games” -de mugt onlaýn oýnaň
+            </title>
+            <headline>
+              Необходимо угадывать названия мультфильмов Диснея по кадрам из них. Всего 20 вопросов. При правильном ответе не менее чем на 80% вопросов, ты получишь должность режиссёра...
+            </headline>
+            <modtime>
+              20210728T225107
+            </modtime>
+            <size>
+              811
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+          <doc id="ZACDFB0C59399C913">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627502848&amp;text=yandex&amp;url=https%3A//yandex.tm/games/app/171107&amp;l10n=ru&amp;mime=html&amp;sign=36dcc66033f40088b1dee04788b6ac65&amp;keyno=0
+            </saved-copy-url>
+            <url>https://yandex.tm/games/app/171107</url>
+            <domain>
+              yandex.tm
+            </domain>
+            <title>
+              7 слов — “
+              <hlword>
+                Yandex
+              </hlword>
+              .Games” -de mugt onlaýn oýnaň
+            </title>
+            <headline>
+              7 слов - игра в слова, в которой нужно составлять слова из букв на заданную тему. Любите составлять слова из слова? Найдите самые популярные ответы. Например, «Животные на...
+            </headline>
+            <modtime>
+              20210728T230158
+            </modtime>
+            <size>
+              860
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="kolfan.ru"/>
+          <doccount>
+            1
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="ZA64DDBFA27BF9DCA">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              http://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627502848&amp;text=yandex&amp;url=http%3A//www.kolfan.ru/viewtopic.php%3Ff%3D13%26t%3D72%26p%3D23253&amp;l10n=ru&amp;mime=html&amp;sign=8a7fcb2b0a87a73f9d907cd163117587&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              http://www.kolfan.ru/viewtopic.php?f=13&amp;t=72&amp;p=23253
+            </url>
+            <domain>
+              www.kolfan.ru
+            </domain>
+            <title>
+              Конкурсная болталка | Форум
+            </title>
+            <modtime>
+              20210728T225915
+            </modtime>
+            <size>
+              3058
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                Коркодил Облизьянович, уважаемый, прошу простить, но я ни хрена не понял. Прошу извинить мой плохой французский.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="gorjob.ru"/>
+          <doccount>
+            1
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="ZC7AAAFBC6CB5E0B7">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627502848&amp;text=yandex&amp;url=https%3A//mosobl.gorjob.ru/vacancy/peshii-kurer-avtokurer-ezhednevnye-vyplaty-47937321&amp;l10n=ru&amp;mime=html&amp;sign=28a9b2cb7ff8c30ec37b8928af42a2de&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://mosobl.gorjob.ru/vacancy/peshii-kurer-avtokurer-ezhednevnye-vyplaty-47937321
+            </url>
+            <domain>
+              mosobl.gorjob.ru
+            </domain>
+            <title>
+              Вакансия Пеший курьер/автокурьер (ежедневные выплаты)...
+            </title>
+            <modtime>
+              20210728T225603
+            </modtime>
+            <size>
+              1763
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                Пеший курьер/автокурьер. Партнёр сервиса
+                <hlword>
+                  Яндекс
+                </hlword>
+                .Еда.
+                <hlword>
+                  Яндекс
+                </hlword>
+                .Еда – удобный онлайн сервис, позволяющий заказать еду из ресторанов. Обязанности: Доставка заказов из ресторанов (для...
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="yandex.co.il"/>
+          <doccount>
+            17
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="ZC8AFAB111E69B065">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=he&amp;la=1627502208&amp;text=yandex&amp;url=https%3A//yandex.co.il/games/app/160696&amp;l10n=ru&amp;mime=html&amp;sign=5f00e247e63264e48c6eb5b9a40e5e50&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://yandex.co.il/games/app/160696
+            </url>
+            <domain>
+              yandex.co.il
+            </domain>
+            <title>
+              Угадай мультик Диснея — לשחק באינטרנט בחינם על
+              <hlword>
+                Yandex
+              </hlword>
+              .משחקים
+            </title>
+            <headline>
+              Необходимо угадывать названия мультфильмов Диснея по кадрам из них. Всего 20 вопросов. При правильном ответе не менее чем на 80% вопросов, ты получишь должность режиссёра...
+            </headline>
+            <modtime>
+              20210728T225036
+            </modtime>
+            <size>
+              897
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                he
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="vk.com"/>
+          <doccount>
+            117
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z967E252D2EF088A8">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627501824&amp;text=yandex&amp;url=https%3A//vk.com/wall624360078_99&amp;l10n=ru&amp;mime=html&amp;sign=7e3129e1dcb138b6d8a15ac31b9b3c99&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://vk.com/wall624360078_99
+            </url>
+            <domain>
+              vk.com
+            </domain>
+            <title>
+              Я смогу перевести 5000 абонентов МТС в нашем.. | Shari Minnich
+            </title>
+            <modtime>
+              20210728T224417
+            </modtime>
+            <size>
+              300
+            </size>
+            <charset>
+              windows-1251
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                Я смогу перевести 5000 абонентов МТС в нашем городе на Теле-2 zen.
+                <hlword>
+                  yandex
+                </hlword>
+                .ru.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <group>
+          <categ attr="d" name="greenmile.ru"/>
+          <doccount>
+            5
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z3E8E5A0919809363">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627504900&amp;tld=ru&amp;lang=ru&amp;la=1627500928&amp;text=yandex&amp;url=https%3A//greenmile.ru/forumgm/node/1529/page1077&amp;l10n=ru&amp;mime=html&amp;sign=be1288f6a50836ae0a8cb5c1f2f5efcf&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://greenmile.ru/forumgm/node/1529/page1077
+            </url>
+            <domain>
+              greenmile.ru
+            </domain>
+            <title>
+              Международные отношения, политика, экономика... - Greenmile
+            </title>
+            <modtime>
+              20210728T222735
+            </modtime>
+            <size>
+              709
+            </size>
+            <charset>
+              utf-8
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <passages>
+              <passage>
+                Свернуть.
+                <hlword>
+                  Yandex
+                </hlword>
+                .RTB R-A-94718-12.
+              </passage>
+              <passage>
+                <hlword>
+                  Yandex
+                </hlword>
+                .RTB R-A-94718-1. Свернуть. Навигация по разделам.
+              </passage>
+            </passages>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <found priority="phrase">
+          1872
+        </found>
+        <found priority="strict">
+          1872
+        </found>
+        <found priority="all">
+          1872
+        </found>
+        <found-docs priority="phrase">
+          24222000
+        </found-docs>
+        <found-docs priority="strict">
+          24222000
+        </found-docs>
+        <found-docs priority="all">
+          24222000
+        </found-docs>
+        <found-docs-human>
+          нашёл 24 млн ответов
+        </found-docs-human>
+      </grouping>
+    </results>
+  </response>
+</yandexsearch>
