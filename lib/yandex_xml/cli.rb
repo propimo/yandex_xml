@@ -23,11 +23,11 @@ def print_response(response, extra_params)
     all_occurrences = response.found_docs.select do |doc|
       doc[:domain] == extra_params[:show_pos_of]
     end
-    puts "Позиция #{extra_params[:show_pos_of]}:"
+    puts "Первая позиция #{extra_params[:show_pos_of]}:"
     if all_occurrences.first
       puts all_occurrences.first[:pos]
     else
-      puts "nil"
+      puts "Не найдено"
     end
   end
 
