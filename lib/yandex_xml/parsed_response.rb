@@ -97,26 +97,56 @@ class ParsedResponse
   end
 
   private
+
+  # Этот список можно дополнять
+  def parse_doc (doc, position)
+    doc_desc = {
+      pos: position,
+      url: doc['url'],
+      domain: doc['domain'],
+      title: doc['title'],
+      modtime: doc['modtime'],
+      size: doc['size'],
+      charset: doc['charset'],
+      lang: doc['properties']['lang']
+    }
+  end
+
+  # Если xml тег встречается несколько раз, то Nori парсит его в массив хешей
+  # Если он встречается только единожды, то Nori парсит его содержимое в хеш
   def parse_docs(groups)
     docs = []
     doc_pos = 0
-    # Для каждой группы
-    groups.each do |group|
-      # Для каждой страницы
-      group['doc'].each do |doc|
-        #TODO? Ошибка, если в ответе только один док
-        doc_desc = {
-          pos: doc_pos,
-          url: doc['url'],
-          domain: doc['domain'],
-          title: doc['title'],
-          modtime: doc['modtime'],
-          size: doc['size'],
-          charset: doc['charset'],
-          lang: doc['properties']['lang']
-        }
-        doc_pos += 1
-        docs << doc_desc
+    # Если группа только одна
+    if groups.is_a?(Hash)
+      # Если в группе только один документ
+      if groups['doc'].is_a?(Hash)
+        docs << parse_doc(groups['doc'], doc_pos)
+      end
+      # Если документов несколько
+      if groups['doc'].is_a?(Array)
+        groups['doc'].each do |doc|
+          docs << parse_doc(doc, doc_pos)
+          doc_pos += 1
+        end
+      end
+    end
+    # Если групп много
+    if groups.is_a?(Array)
+      # Для каждой группы
+      groups.each do |group|
+        # Если в группе один документ
+        if group['doc'].is_a?(Hash)
+          docs << parse_doc(group['doc'], doc_pos)
+          doc_pos += 1
+        end
+        # Если в группе несколько доков
+        if group['doc'].is_a?(Array)
+          group['doc'].each do |doc|
+            docs << parse_doc(doc, doc_pos)
+            doc_pos += 1
+          end
+        end
       end
     end
     docs
