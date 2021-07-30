@@ -1,4 +1,9 @@
 def print_response(response, extra_params)
+
+  if response.error?
+    abort "ERROR: #{response.error_message}"
+  end
+
   if extra_params[:show_number_of_results]
     puts "Кол-во результатов: #{response.number_of_results}"
   end
