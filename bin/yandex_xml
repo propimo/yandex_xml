@@ -42,6 +42,13 @@ OptionParser.new do |opts|
     options[:get_options] = JSON.parse(v)
   end
 
+  opts.on("-p", "--post_request JSON_STR", "POST-запрос",
+          "Пример JSON_STR (указаны не все параметры):",
+          '\'{"url_options": {"lr":225, "filter":"moderate"},"body_options": {"query":"query_string", "page":0, "groupby": {"mode":"flat", "groups-on-page":10, "docs-in-group":2}}\'',
+          " Подробнее: https://yandex.ru/dev/xml/doc/dg/concepts/post-request.html") do |v|
+    options[:post_options] = JSON.parse(v)
+  end
+
   # ------ Дополнительные параметры ------
   options[:extra_params] = {}
 
@@ -66,7 +73,7 @@ OptionParser.new do |opts|
     options[:extra_params][:show_number_of_results] = v
   end
 
-  opts.on("-p", "--position_of DOMAIN", "Показать позицию сайта в результатах запроса") do |v|
+  opts.on("--position_of DOMAIN", "Показать позицию сайта в результатах запроса") do |v|
     options[:extra_params][:show_pos_of] = v
   end
 
@@ -115,7 +122,11 @@ unless options[:get_options].nil?
   print_response(response, options[:extra_params])
 end
 
-#TODO post-запрос
+unless options[:post_options].nil?
+  response = api_controller.post_request(options[:post_options])
+
+  print_response(response, options[:extra_params])
+end
 
 
 

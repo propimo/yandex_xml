@@ -1,6 +1,7 @@
 require 'net/http'
 require './lib/yandex_xml/parsed_response'
-#require '../yandex_xml/parsed_response'
+
+require 'nokogiri'
 
 class ApiController
   def initialize(user, key)
@@ -22,14 +23,39 @@ class ApiController
     ParsedResponse.new(response)
   end
 
-  # Пока что в ответе выдает "ОШИБКА: Start tag expected, '<' not found"
-  def post_request(query_str, options)
-    uri = URI.parse(@base_url)
-    response = Net::HTTP.post_form(uri,
-                              'query'=>:query_str,
-                              'sortby'=>options[:sortby],
-                              'maxpassages'=>options[:maxpassages],
-                              'page'=>options[:page]) # еще один возможный параметр - groupby
+  def post_request(options)
+    url_options = options["url_options"]
+    body_options = options["body_options"]
+
+    uri = URI.parse("#{@base_url}&#{URI.encode_www_form(url_options)}")
+
+    xml_string = Nokogiri::XML::Builder.new do |xml|
+      xml.request {
+        xml.query body_options["query"] if body_options["query"]
+        xml.sortby body_options["sortby"] if body_options["sortby"]
+        xml.maxpassages body_options["maxpassages"] if body_options["maxpassages"]
+        xml.page body_options["page"] if body_options["page"]
+        if body_options["groupby"]
+          xml.groupings {
+
+            # Я уверен, здесь можно было проще
+            if body_options["groupby"]["mode"] == "flat"
+              xml.groupby(:attr => "f", :mode => "flat", "groups-on-page" => body_options["groupby"]["groups-on-page"], "docs-in-group" => body_options["groupby"]["docs-in-group"])
+            elsif body_options["groupby"]["mode"] == "deep"
+              xml.groupby(:attr => "d", :mode => "deep", "groups-on-page" => body_options["groupby"]["groups-on-page"], "docs-in-group" => body_options["groupby"]["docs-in-group"])
+            end
+
+          }
+        end
+
+      }
+    end.to_xml
+
+    # Прсто вставил нагугленный код, не понял как это работает
+    request = Net::HTTP::Post.new(uri)
+    request.body = xml_string
+    request.content_type = 'text/xml'
+    response = Net::HTTP.new(uri.host, uri.port).start { |http| http.request request }
 
     ParsedResponse.new(response.body)
   end
