@@ -16,14 +16,14 @@ class ApiController
 
   # ------------- Всё что ниже тестировалось только с ошибкой (например, неверные вх. данные) -------------
 
-  def get_query(options)
+  def get_request(options)
     uri = URI.parse("#{@base_url}&#{URI.encode_www_form(options)}")
     response = Net::HTTP.get(uri)
     ParsedResponse.new(response)
   end
 
   # Пока что в ответе выдает "ОШИБКА: Start tag expected, '<' not found"
-  def post_query(query_str, options)
+  def post_request(query_str, options)
     uri = URI.parse(@base_url)
     response = Net::HTTP.post_form(uri,
                               'query'=>:query_str,
