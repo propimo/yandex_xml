@@ -76,6 +76,13 @@ OptionParser.new do |opts|
 
 end.parse!
 
+if options[:user].nil?
+  abort "Не указан пользователь"
+end
+if options[:key].nil?
+  abort "Не указан ключ"
+end
+
 if !options.key?(:limits) && options[:get_options].nil?
   abort "В параметрах не указано никакого действия"
 end
