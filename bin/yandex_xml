@@ -39,8 +39,7 @@ OptionParser.new do |opts|
           "Если параметр не указан, будет использоваться значение по умолчанию",
           "Пример JSON_STR (указаны значения по-умолчанию):",
           '\'{"query":"query_string", "filter":"rlv", "filter":"none", "maxpassages":4, "page":0, "lr"=225}\'') do |v|
-    json = JSON.parse(v)
-    options[:get_options] = json
+    options[:get_options] = JSON.parse(v)
   end
 
   # ------ Дополнительные параметры ------
