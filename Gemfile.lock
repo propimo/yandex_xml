@@ -1,0 +1,38 @@
+PATH
+  remote: .
+  specs:
+    yandex_xml (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.4.4)
+    nokogiri (1.11.7-x86_64-linux)
+      racc (~> 1.4)
+    nori (2.6.0)
+    racc (1.5.2)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  nokogiri
+  nori
+  rspec (~> 3.0)
+  yandex_xml!
+
+BUNDLED WITH
+   2.2.24

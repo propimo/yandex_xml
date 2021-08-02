@@ -3,10 +3,15 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in yandex_xml.gemspec
 gemspec
 
-#gem "rake", "~> 12.0"
-gem "rspec", "~> 3.0"
+# Nori for parsing xml
+gem 'nori'
 
-# Не знаю, правильный ли код ниже и на что влияет
-# gem 'nori'
-# gem 'thor'
-# gem 'net/http'
+# Nokogiri for building xml
+gem 'nokogiri'
+
+gem 'optparse'
+
+# Здесь всегда ошибка:
+# Could not find gem 'net-http' in rubygems repository https://rubygems.org/ or installed locally.
+# The source does not contain any versions of 'net-http'
+#gem 'net-http'
