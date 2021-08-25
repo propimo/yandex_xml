@@ -113,12 +113,7 @@ end
 
 # ------ GET-запрос ------
 unless options[:get_options].nil?
-  #  response = api_controller.get_request(options[:get_options])
-
-  xml_string = File.read("./spec/mock/few_results.xml")
-  response = ParsedResponse.new(xml_string)
-
-
+  response = api_controller.get_request(options[:get_options])
   print_response(response, options[:extra_params])
 end
 
