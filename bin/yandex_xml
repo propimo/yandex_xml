@@ -44,7 +44,7 @@ OptionParser.new do |opts|
 
   opts.on("-p", "--post_request JSON_STR", "POST-запрос",
           "Пример JSON_STR (указаны не все параметры):",
-          '\'{"url_options": {"lr":225, "filter":"moderate"},"body_options": {"query":"query_string", "page":0, "groupby": {"mode":"flat", "groups-on-page":10, "docs-in-group":2}}\'',
+          '\'{"url_options": {"lr":225, "filter":"moderate"},"body_options": {"query":"query_string", "page":0, "groupby": {"mode":"flat", "groups-on-page":10, "docs-in-group":2}}}\'',
           " Подробнее: https://yandex.ru/dev/xml/doc/dg/concepts/post-request.html") do |v|
     options[:post_options] = JSON.parse(v)
   end
@@ -90,7 +90,7 @@ if options[:key].nil?
   abort "Не указан ключ"
 end
 
-if !options.key?(:limits) && options[:get_options].nil?
+if !options.key?(:limits) && options[:get_options].nil? && options[:post_options].nil?
   abort "В параметрах не указано никакого действия"
 end
 
@@ -117,11 +117,10 @@ unless options[:get_options].nil?
   print_response(response, options[:extra_params])
 end
 
+# ------ POST-запрос ------
 unless options[:post_options].nil?
   response = api_controller.post_request(options[:post_options])
-
   print_response(response, options[:extra_params])
 end
-
 
 
