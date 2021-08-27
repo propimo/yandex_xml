@@ -27,7 +27,12 @@ class ApiController
     url_options = options["url_options"]
     body_options = options["body_options"]
 
-    uri = URI.parse("#{@base_url}&#{URI.encode_www_form(url_options)}")
+    if url_options.nil?
+      uri = URI.parse("#{@base_url}")
+    else
+      uri = URI.parse("#{@base_url}&#{URI.encode_www_form(url_options)}")
+    end
+
 
     xml_string = Nokogiri::XML::Builder.new do |xml|
       xml.request {
