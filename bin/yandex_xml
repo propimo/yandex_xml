@@ -1,0 +1,126 @@
+#!/usr/bin/env ruby
+require 'optparse'
+require 'json'
+
+# TODO check for workdirectory
+unless File.exist?('./Rakefile') || File.exist?('./Gemfile')
+  # Устанавливаю корневую папку проекта рабочей
+  Dir.chdir("../")
+
+  unless File.exist?('./Rakefile') || File.exist?('./Gemfile')
+    abort "Запустите программу из корневой папки или из папки bin" #????
+  end
+end
+
+require "./lib/yandex_xml/api_controller"
+require './lib/yandex_xml/cli'
+
+# ------ Парсинг параметров из консоли ------
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: yandex_xml [options]"
+
+  # ------ Пользователь и ключ ------
+  opts.on('-u', '--user USER', "Имя пользователя") do |v|
+    options[:user] = v
+  end
+  opts.on("-k", "--key KEY", "Ключ пользователя") do |v|
+    options[:key] = v
+  end
+
+  # ------ Действия ------
+  opts.on("-l", "--limits [by_h]", "Показать лимиты",
+          "Без передачи аргумента покажет сумму лимитов на сутки") do |v|
+    options[:limits] = v
+  end
+
+  opts.on("-g", "--get_request JSON_STR", "GET-запрос",
+          'Все параметры кроме "query" не обязательны',
+          "Если параметр не указан, будет использоваться значение по умолчанию",
+          "Пример JSON_STR (указаны значения по-умолчанию):",
+          '\'{"query":"query_string", "filter":"rlv", "filter":"none", "maxpassages":4, "page":0, "lr":225}\'') do |v|
+    options[:get_options] = JSON.parse(v)
+  end
+
+  opts.on("-p", "--post_request JSON_STR", "POST-запрос",
+          "Пример JSON_STR (указаны не все параметры):",
+          '\'{"url_options": {"lr":225, "filter":"moderate"},"body_options": {"query":"query_string", "page":0, "groupby": {"mode":"flat", "groups-on-page":10, "docs-in-group":2}}}\'',
+          " Подробнее: https://yandex.ru/dev/xml/doc/dg/concepts/post-request.html") do |v|
+    options[:post_options] = JSON.parse(v)
+  end
+
+  # ------ Дополнительные параметры ------
+  options[:extra_params] = {}
+
+  opts.on("-a", "--show_all_results", "Показать все результаты запроса") do |v|
+    options[:extra_params][:show_all] = v
+  end
+
+  opts.on("-t", "--show_top N", "Показать первые N результатов запроса") do |v|
+
+    raise ArgumentError.new(
+      "Expected Integer, got #{v.class.name}"
+    ) unless v.to_i.to_s == v
+    n = v.to_i
+    raise ArgumentError.new(
+      "N must be between 1 and 100, got #{n}"
+    ) if n < 1 || n > 100
+
+    options[:extra_params][:show_top] = n
+  end
+
+  opts.on("-n", "--number_of_results", "Показать кол-во результатов") do |v|
+    options[:extra_params][:show_number_of_results] = v
+  end
+
+  opts.on("--position_of DOMAIN", "Показать позицию сайта в результатах запроса") do |v|
+    options[:extra_params][:show_pos_of] = v
+  end
+
+  opts.on("-f", "--first", "Показать первый результат запроса") do |v|
+    options[:extra_params][:first] = v
+  end
+
+end.parse!
+
+if options[:user].nil?
+  abort "Не указан пользователь"
+end
+if options[:key].nil?
+  abort "Не указан ключ"
+end
+
+if !options.key?(:limits) && options[:get_options].nil? && options[:post_options].nil?
+  abort "В параметрах не указано никакого действия"
+end
+
+api_controller = ApiController.new(options[:user], options[:key])
+
+# ------ Запрос лимитов ------
+if options.key?(:limits)
+  response = api_controller.limits
+
+  if response.error?
+    abort "ERROR: #{response.error_message}"
+  end
+  if options[:limits].nil?
+    puts "Кол-во лимитов на сутки: #{response.limits_day_amount}"
+  else
+    puts "Лимиты по часам:"
+    puts response.limits_by_hours
+  end
+end
+
+# ------ GET-запрос ------
+unless options[:get_options].nil?
+  response = api_controller.get_request(options[:get_options])
+  print_response(response, options[:extra_params])
+end
+
+# ------ POST-запрос ------
+unless options[:post_options].nil?
+  response = api_controller.post_request(options[:post_options])
+  print_response(response, options[:extra_params])
+end
+
+

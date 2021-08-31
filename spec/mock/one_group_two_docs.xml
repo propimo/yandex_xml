@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yandexsearch version="1.0">
+  <request>
+    <query>
+      yandex
+    </query>
+    <page>
+      0
+    </page>
+    <sortby order="ascending" priority="no">
+      tm
+    </sortby>
+    <maxpassages>
+      1
+    </maxpassages>
+    <groupings>
+      <groupby attr="" mode="flat" groups-on-page="1" docs-in-group="1" curcateg="-1"/>
+    </groupings>
+  </request>
+  <response date="20210728T183550">
+    <reqid>
+      1627497350204734-525911631195136567357930-production-app-host-sas-web-yp-251
+    </reqid>
+    <found priority="phrase">
+      24860525
+    </found>
+    <found priority="strict">
+      24860525
+    </found>
+    <found priority="all">
+      24860525
+    </found>
+    <found-human>
+      Нашлось 25 млн ответов
+    </found-human>
+    <is-local>
+      no
+    </is-local>
+    <results>
+      <grouping attr="" mode="flat" groups-on-page="1" docs-in-group="1" curcateg="-1">
+        <page first="1" last="1">
+          0
+        </page>
+        <group>
+          <categ attr="d" name="coffee-butik.ru"/>
+          <doccount>
+            4
+          </doccount>
+          <relevance priority="all"/>
+          <doc id="Z0100F10260C6A4AA">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627503628&amp;tld=ru&amp;lang=ru&amp;la=1627503360&amp;text=yandex&amp;url=https%3A//balakovo.coffee-butik.ru/katalog/teplovoe-oborudovanie/fritjurnye-shkafy/vortmax/p-dve-----/&amp;l10n=ru&amp;mime=html&amp;sign=8929ac234b18d4eaad46ed7b4563c2d2&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://balakovo.coffee-butik.ru/katalog/teplovoe-oborudovanie/fritjurnye-shkafy/vortmax/p-dve-----/
+            </url>
+            <domain>
+              balakovo.coffee-butik.ru
+            </domain>
+            <title>
+              Фритюрные шкафы Vortmax с 2 ваннами — цены, купить...
+            </title>
+            <headline>
+              Фритюрные шкафы Vortmax с 2 ваннами— купить по выгодной цене в интернет-магазине coffee-butik.ru. Магазин чая, кофе и товаров для дома, кафе, баров. Заказывайте по 8 800 500 92 50...
+            </headline>
+            <modtime>
+              20210728T231604
+            </modtime>
+            <size>
+              3022
+            </size>
+            <charset>
+              windows-1251
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+          <doc id="ZD63951F93A508C15">
+            <relevance priority="all"/>
+            <saved-copy-url>
+              https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1627503628&amp;tld=ru&amp;lang=ru&amp;la=1627503360&amp;text=yandex&amp;url=https%3A//balakovo.coffee-butik.ru/katalog/teplovoe-oborudovanie/fritjurnye-shkafy/vortmax/p-odna----/&amp;l10n=ru&amp;mime=html&amp;sign=0d49cfe4b9f225d3594d4f10389e9aa8&amp;keyno=0
+            </saved-copy-url>
+            <url>
+              https://balakovo.coffee-butik.ru/katalog/teplovoe-oborudovanie/fritjurnye-shkafy/vortmax/p-odna----/
+            </url>
+            <domain>
+              balakovo.coffee-butik.ru
+            </domain>
+            <title>
+              Фритюрные шкафы Vortmax с 1 ванной — цены, купить с 1 ванной...
+            </title>
+            <headline>
+              Фритюрные шкафы Vortmax с 1 ванной — купить по выгодной цене в интернет-магазине coffee-butik.ru. Магазин чая, кофе и товаров для дома, кафе, баров. Заказывайте по 8 800 500 92 50...
+            </headline>
+            <modtime>
+              20210728T231605
+            </modtime>
+            <size>
+              3018
+            </size>
+            <charset>
+              windows-1251
+            </charset>
+            <mime-type>
+              text/html
+            </mime-type>
+            <properties>
+              <_PassagesType>
+                0
+              </_PassagesType>
+              <lang>
+                ru
+              </lang>
+            </properties>
+          </doc>
+        </group>
+        <found priority="phrase">
+          9711
+        </found>
+        <found priority="strict">
+          9711
+        </found>
+        <found priority="all">
+          9711
+        </found>
+        <found-docs priority="phrase">
+          10100
+        </found-docs>
+        <found-docs priority="strict">
+          10100
+        </found-docs>
+        <found-docs priority="all">
+          10100
+        </found-docs>
+        <found-docs-human>
+          нашёл 10 тыс. ответов
+        </found-docs-human>
+      </grouping>
+    </results>
+  </response>
+</yandexsearch>
